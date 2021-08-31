@@ -21,7 +21,7 @@ const getLoggedJSX = () => (
 );
 
 export function SignInButton() {
-  const [ isUsedLoggedIn, setIsUsedLoggedIn ] = useState(true);
+  const [ isUsedLoggedIn, setIsUsedLoggedIn ] = useState(false);
 
   return isUsedLoggedIn 
     ? getLoggedJSX()
