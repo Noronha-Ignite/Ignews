@@ -15,9 +15,9 @@ interface HomeProps {
 }
 
 export default function Home({ product }: HomeProps) {
-  const formatter = new Intl.NumberFormat('en-US', {
+  const formatter = new Intl.NumberFormat('pt-BR', {
     style: 'currency',
-    currency: 'USD'
+    currency: 'BRL'
   });
 
   return (
@@ -33,7 +33,7 @@ export default function Home({ product }: HomeProps) {
             <span>for { formatter.format(product.amount) } month</span>
           </p>
 
-          <SubscribeButton priceId={ product.priceId } />
+          <SubscribeButton />
         </section>
 
         <img src="/images/avatar.svg" alt="Girl coding" />
